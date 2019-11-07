@@ -4,11 +4,11 @@ Welcome to my basic React boilerplate. Thanks for cloning it.
 
 <h4>Boilerplate Features</h4>
 1. Some basic UI elements are available
-    a. Anchor
-    b. ION Icon
-    c. Image
-    d. Input
-    
+a. Anchor
+b. ION Icon
+c. Image
+d. Input
+
 2. Higher Order Wrapping component ready to use
 4. GRID CSS
 5. ION ICONS
@@ -20,7 +20,13 @@ Welcome to my basic React boilerplate. Thanks for cloning it.
 
 
 <h4>Instructions</h4>
-1. use command npm install to install all the dependencies if you already haven't
-2. npm start to run
-3. npm build to get the production build
-4. Remove all the code from Layout component and start adding your code here.
+<ul>
+    <li>use command npm install to install all the dependencies if you already haven't</li>
+    <li>npm start to run</li>
+    <li>npm build to get the production build</li>
+    <li>
+        <strong>
+            Remove all the code from this Layout component and start adding your code here.
+        </strong>
+    </li>
+</ul>
