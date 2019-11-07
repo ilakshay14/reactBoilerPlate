@@ -1,3 +1,35 @@
-.Layout {
-    align-content: space-between;
+.row{
+    
+    padding: 5%;
 }
+
+
+.divLeft{
+    float: left;
+    border-right: 1px solid black;
+}
+
+.divLeft ul {
+    list-style: outside;
+    margin-left: 5%;
+}
+
+.divLeft ol {
+    padding: 2%;
+    margin-left: 2%;
+}
+
+
+.divRight {
+    float: right;
+    
+}
+
+.divRight ul {
+    list-style: outside;
+    margin-left: 5%;
+}
+
+
+
+

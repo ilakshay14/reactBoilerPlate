@@ -1,0 +1,16 @@
+.icon {
+  font-size: 700%;
+  display: block;
+  color: #cf6d17;
+  margin-bottom: 10px;
+  animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+};

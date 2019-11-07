@@ -4,44 +4,53 @@ import Input from '../../components/UI/Input/Input';
 
 import classes from './Layout.css';
 
-class Layout extends Component {
+const Layout = () => (
+    <>
+        <div className="row parentDiv">
+            <h1>React Boilerplate</h1>
+            <p>Welcome to my basic React boilerplate. Thanks for cloning it.</p>
+            <br />
+            <div className="span-1-of-2 divLeft">
+                <h4>Boilerplate Features -</h4>
+                <br />
+                <ul>
+                    <li>Basic UI elements are available
+                    <ol>
+                            <li>Anchor</li>
+                            <li>Button</li>
+                            <li>Ion Icons</li>
+                            <li>Image</li>
+                            <li>Input</li>
+                        </ol>
+                    </li>
+                    <li>Higher Order Wrapping component ready to use</li>
+                    <li>GRID CSS</li>
+                    <li>ION ICONS</li>
+                    <li>ANIMATE CSS</li>
+                    <li>NORMALISE CSS</li>
+                    <li>Media queries</li>
+                    <li>Basic WEBPACK config</li>
+                    <li>LATO Google Font</li>
 
-    state = {
-        textValue: '',
-    }
-
-    buttonOnClickHandler = () => {
-        alert(this.state.textValue);
-    }
-
-    textValueChangeHandler = (event) => {
-        this.setState({
-            textValue: event.target.value
-        });
-    }
-
-    render() {
-
-        const textValue = this.state.textValue;
-
-        return (
-            <div className={"form-inline Layout"}>
-                <Button
-                    class={"btn btn-success"}
-                    clicked={this.buttonOnClickHandler}
-                >
-                    Click
-                </Button>
-                <Input
-                    type={"text"}
-                    id={"username"}
-                    class={"form-control"}
-                    value={textValue}
-                    textChanged={this.textValueChangeHandler}
-                ></Input>
+                </ul>
             </div>
-        );
-    }
-}
+            <div className="span-1-of-2 divRight">
+                <h4>Instructions</h4>
+                <br />
+                <ul>
+                    <li>use command npm install to install all the dependencies if you already haven't</li>
+                    <li>npm start to run</li>
+                    <li>npm build to get the production build</li>
+                    <li>
+                        <strong>
+                            Remove all the code from this Layout component and start adding your code here.
+                        </strong>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </>
+);
 
 export default Layout;
