@@ -1,8 +1,8 @@
-React Boilerplate
+<h1>React Boilerplate</h1>
 
 Welcome to my basic React boilerplate. Thanks for cloning it.
 
-Boilerplate Features-
+<h4>Boilerplate Features</h4>
 1. Some basic UI elements are available
     a. Anchor
     b. ION Icon
@@ -19,7 +19,7 @@ Boilerplate Features-
 10. LATO Google Font
 
 
-Instructions
+<h4>Instructions</h4>
 1. use command npm install to install all the dependencies if you already haven't
 2. npm start to run
 3. npm build to get the production build
