@@ -1,11 +1,6 @@
 import React from 'react';
-import classs from './Image.css';
 
-const Image = (props) => (
-    <img
-        src={props.source}
-        alt={props.alternateText}
-    />
-);
+
+const Image = ({ source, alternateText }) => (<img src={source} alt={alternateText} />);
 
 export default Image;   

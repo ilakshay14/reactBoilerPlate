@@ -4,29 +4,21 @@ Welcome to my basic React boilerplate. Thanks for cloning it.
 
 <h4>Boilerplate Features</h4>
 1. Some basic UI elements are available
-a. Anchor
-b. ION Icon
-c. Image
-d. Input
+    a. Anchor
+    c. Image
+    d. Input
+    e. Button
 
-2. Higher Order Wrapping component ready to use
-4. GRID CSS
-5. ION ICONS
-6. ANIMATE CSS
-7. NORMALISE CSS
-8. Media queries
-9. Basic WEBPACK config
-10. LATO Google Font
+2. Basic WEBPACK config
+3. Muli Google Font
+4. Styled Components
+5. Global styles using Styled components
+6. Theme provider using Styled components
 
 
 <h4>Instructions</h4>
 <ul>
-    <li>use command npm install to install all the dependencies if you already haven't</li>
-    <li>npm start to run</li>
-    <li>npm build to get the production build</li>
-    <li>
-        <strong>
-            Remove all the code from this Layout component and start adding your code here.
-        </strong>
-    </li>
+    <li>use command YARN/NPM</li>
+    <li>yarn start to run</li>
+    <li>yarn build to get the production build</li>
 </ul>

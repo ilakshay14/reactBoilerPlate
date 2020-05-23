@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { ThemeProvider } from 'styled-components';
+
 import App from './App';
-import './vendors/css/animate.css';
-import './vendors/css/Grid.css';
-import './vendors/css/ionicons.min.css';
-import './vendors/css/normalize.css';
+import GlobalStyle from './theme/globalStyles';
+import Theme from './theme/theme';
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+ReactDOM.render(
+    <ThemeProvider theme={Theme}>
+        <GlobalStyle />
+        <App />
+    </ThemeProvider>, document.getElementById('root'));

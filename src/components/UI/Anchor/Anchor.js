@@ -1,15 +1,5 @@
 import React from 'react';
-import classes from './Anchor.css';
 
-const Anchor = (props) => (
-
-    <a
-        className={props.btnType}
-        href={props.link}
-        target={props.target}
-    >
-        {props.children}
-    </a>
-);
+const Anchor = ({ link, target, children }) => (<a href={link} target={target}>{children}</a>);
 
 export default Anchor;
