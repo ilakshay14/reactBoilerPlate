@@ -12,4 +12,6 @@ ReactDOM.render(
     <ThemeProvider theme={Theme}>
         <GlobalStyle />
         <App />
-    </ThemeProvider>, document.getElementById('root'));
+    </ThemeProvider>,
+    document.getElementById('root')
+);
