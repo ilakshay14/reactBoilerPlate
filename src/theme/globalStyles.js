@@ -1,10 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-    html{
+    html,body{
+        width: 100%;
         height: 100%;
         color: #000000;
-        font-family: 'Muli', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 100%;
     }
 

@@ -1,24 +1,29 @@
 <h1>React Boilerplate</h1>
 
-Welcome to my basic React boilerplate. Thanks for cloning it.
+Welcome to my basic React boilerplate.
 
 <h4>Boilerplate Features</h4>
-1. Some basic UI elements are available
-    a. Anchor
-    c. Image
-    d. Input
-    e. Button
-
-2. Basic WEBPACK config
-3. Muli Google Font
-4. Styled Components
-5. Global styles using Styled components
-6. Theme provider using Styled components
-
+<ul>
+    <li>
+        Some basic UI elements are available
+        <ul>
+            <li>Anchor</li>
+            <li>Image</li>
+            <li>Input</li>
+            <li>Button</li>
+        </ul>
+    </li>
+    <li>Basic WEBPACK config</li>
+    <li>Work Sans - Google Font</li>
+    <li>Styled Components</li>
+    <li>Global styles using Styled components</li>
+</ul>
 
 <h4>Instructions</h4>
 <ul>
-    <li>use command YARN/NPM</li>
-    <li>yarn start to run</li>
-    <li>yarn build to get the production build</li>
+    <li><strong>yarn start</strong> - run on localhost</li>
+    <li><strong>yarn run host</strong> - run & host on local network. Change the device IP in script</li>
+    <li><strong>yarn run build</strong> - production build</li>
 </ul>
+
+<h4>Cheers!</h4>
