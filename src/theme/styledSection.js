@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledSection = styled.section`
-    height: 100%;
+    height: 100vh;
     
 `;
 
