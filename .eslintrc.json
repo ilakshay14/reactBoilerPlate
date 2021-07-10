@@ -25,7 +25,11 @@
         "react/jsx-indent": "off",
         "react/react-in-jsx-scope": "off",
         "react/jsx-filename-extension": "off",
-        "jsx-quotes": "off"
+        "jsx-quotes": "off",
+        "indent": "off",
+        "no-console": "off",
+        "max-len": "off",
+        "no-underscore-dangle": "off"
         // "avoidEscape": true
     }
 }
