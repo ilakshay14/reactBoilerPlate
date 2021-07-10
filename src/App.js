@@ -1,20 +1,14 @@
-import styled from 'styled-components';
+import { Suspense } from 'react';
+import { Route } from 'react-router-dom';
+import Home from './pages/home';
+import Container from './theme/container';
 
-const StyledLayout = styled.div`
-    padding: 5%;
-
-    h1 {
-        font-size: 350%
-    }
-`;
-
-const App = () => {
-
-    return (
-        <StyledLayout>
-            <h2>Hello World!</h2>
-        </StyledLayout>
-    );
-}
+const App = () => (
+    <Container>
+        <Suspense fallback={<p>Loading...</p>}>
+            <Route exact path='/' component={Home} />
+        </Suspense>
+    </Container>
+);
 
 export default App;

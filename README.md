@@ -1,29 +1,21 @@
-<h1>React Boilerplate</h1>
+# React Boilerplate
 
-Welcome to my basic React boilerplate.
-
-<h4>Boilerplate Features</h4>
+<p>Designed and Developed with :heart: </p> using
 <ul>
-    <li>
-        Some basic UI elements are available
-        <ul>
-            <li>Anchor</li>
-            <li>Image</li>
-            <li>Input</li>
-            <li>Button</li>
-        </ul>
-    </li>
-    <li>Basic WEBPACK config</li>
-    <li>Work Sans - Google Font</li>
+    <li>React JS</li>
     <li>Styled Components</li>
-    <li>Global styles using Styled components</li>
 </ul>
 
-<h4>Instructions</h4>
-<ul>
-    <li><strong>yarn start</strong> - run on localhost</li>
-    <li><strong>yarn run host</strong> - run & host on local network. Change the device IP in script</li>
-    <li><strong>yarn run build</strong> - production build</li>
-</ul>
+<h2>Disclaimer</h2>
+<p>This is a template project to get up and running for new ideas.</p>
+<p>  
+    <strong>
+        <u>This is not production ready optimised code. Any issues/bugs in your usage built over this, is soley your responsibility.</u>
+    </strong>
+</p>
 
-<h4>Cheers!</h4>
+# Developement in progress
+<p>I will keep updating these boilerplates as per my requirements and or whatever I learn and implement.</p>
+
+# Thanks!
+<p>Feel free to check it out and let me know how I can improve it further.</p>
