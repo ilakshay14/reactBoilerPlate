@@ -5,8 +5,6 @@
     <li>React JS</li>
     <li>Styled Components</li>
     <li>Redux</li>
-    <li>Apollo Client</li>
-    <li>GraphQL</li>
 </ul>
 
 <h2>Disclaimer</h2>
