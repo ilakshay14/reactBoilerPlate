@@ -1,13 +1,13 @@
 import { ApolloClient, InMemoryCache, split } from '@apollo/client';
 import { setContext } from 'apollo-link-context';
 import { createHttpLink } from 'apollo-link-http';
-import { WebSocketLink } from '@apollo/client/link/ws';
+// import { WebSocketLink } from '@apollo/client/link/ws';
 import { getMainDefinition } from 'apollo-utilities';
 
 const token = localStorage.getItem('userToken');
 const authHeader = token ? `Bearer ${token}` : '';
 
-const wsLink = new WebSocketLink({
+/* const wsLink = new WebSocketLink({
     uri: process.env.SUBSCRIPTION_URI,
     options: {
         reconnect: true,
@@ -16,7 +16,7 @@ const wsLink = new WebSocketLink({
             'x-api-key': process.env.API_KEY,
         },
     },
-});
+}); */
 
 const authLink = setContext(() => ({
     headers: {
@@ -36,7 +36,9 @@ const splitLink = split(({ query }) => {
         definition.kind === 'OperationDefinition'
         && definition.operation === 'subscription'
     );
-}, wsLink, authLink.concat(httpLink));
+},
+    // wsLink,
+    authLink.concat(httpLink));
 
 const client = new ApolloClient({
     link: splitLink,
