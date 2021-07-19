@@ -37,4 +37,6 @@ jobs:
           else
             npm update
           fi
+          git add .
+          git commit . -m "updated dependencies"
           git push origin master
