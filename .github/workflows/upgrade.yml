@@ -32,6 +32,8 @@ jobs:
         run: |
           echo Checking for YARN
           yarn -v
-        if: ${{ $? == 0 }}
-        run: |
-          yarn upgrade
+          if [ $? == 0 ]; then
+            yarn upgrade
+          else
+            npm update
+          fi
