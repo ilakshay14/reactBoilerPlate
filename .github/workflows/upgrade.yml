@@ -26,34 +26,36 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: "initiating update script"
-        run: echo -e "'\033[0;34m' info '\033[0m' initiating update script"
+        run: echo -e "\033[0;34m info \033[0m initiating update script..."
 
       # Runs a set of commands using the runners shell
       - name: "running commands"
         run: |
-          echo -e "'\033[0;34m' info '\033[0m' running commands"
-          echo -e "'\033[0;34m' info '\033[0m' checking for yarn"
+          echo -e "\033[0;34m info \033[0m running commands..."
+          echo -e "\033[0;34m info \033[0m checking for yarn..."
           yarn -v
           if [ $? == 0 ]; then
-            echo -e "'\033[0;34m' info '\033[0m' running yarn upgrade"
+            echo -e "\033[0;34m info \033[0m running yarn upgrade..."
             yarn upgrade
           else
-            echo -e "'\033[0;31m' err '\033[0m' yarn not found"
-            echo -e "'\033[0;34m' info '\033[0m' running npm update"
+            echo -e "\033[0;31m err \033[0m yarn not found..."
+            echo -e "\033[0;34m info \033[0m running npm update..."
             npm update
           fi
           
           if [ $? == 0 ]; then
             git add .
+            echo -e "\033[0;34m info \033[0m creating a commit..."
             git commit . -m "updated dependencies"
             if [ $? != 1 ]; then
+              echo -e "\033[0;34m info \033[0m pushing to master..."
               git push origin master
               
             else
-              echo -e "'\033[0;34m' info '\033[0m' repo is already up to date."
+              echo -e "\033[0;34m info \033[0m repo is already up to date."
             fi
           else
-            echo -e "'\033[0;31m' err '\033[0m' something went wrong, unable to upgrade."
+            echo -e "\033[0;31m err \033[0m something went wrong, unable to upgrade."
           fi
           
               
