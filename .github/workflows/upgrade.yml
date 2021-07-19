@@ -6,7 +6,7 @@ name: Update_Dependencies
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   schedule:
-  - cron: "55 9 * * *"
+  - cron: "05 10 * * *"
   #  - cron: "0 0 * * SUN"
 
   # Allows you to run this workflow manually from the Actions tab
