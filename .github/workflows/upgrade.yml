@@ -40,4 +40,5 @@ jobs:
           fi
           git add .
           git commit . -m "updated dependencies"
+          if [ $? != 1 ]; then
           git push origin master
