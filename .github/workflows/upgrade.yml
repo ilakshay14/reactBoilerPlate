@@ -30,14 +30,14 @@ jobs:
       - name: Checkout react/basic
         uses: actions/checkout@v2
         with:
-          repository: ./react/basic
-          path: react/basic
+          repository: reactBoilerPlate/react-basic
+          path: react-basic
           
       - name: Checkout react/gqlNoRedux
         uses: actions/checkout@v2
         with:
-          repository: ./react/gqlNoRedux
-          path: react/gqlNoRedux
+          repository: reactBoilerPlate/react-gqlNoRedux
+          path: react-gqlNoRedux
 
       # Runs a single command using the runners shell
       - name: "initiating update script"
