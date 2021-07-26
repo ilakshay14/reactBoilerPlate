@@ -30,13 +30,13 @@ jobs:
       - name: Checkout react/basic
         uses: actions/checkout@v2
         with:
-          repository: reactBoilerPlate/"react/basic"
+          repository: reactBoilerPlate/react/basic
           path: react/basic
           
       - name: Checkout react/gqlNoRedux
         uses: actions/checkout@v2
         with:
-          repository: reactBoilerPlate/"react/gqlNoRedux"
+          repository: reactBoilerPlate/react/gqlNoRedux
           path: react/gqlNoRedux
 
       # Runs a single command using the runners shell
