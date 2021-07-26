@@ -7,8 +7,6 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   schedule:
   - cron: "0 0 * * SUN"
-  #  - cron: "0 0 * * SUN"
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -22,7 +20,24 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+     # - uses: actions/checkout@v2
+      
+      - name: Checkout master
+        uses: actions/checkout@v2
+        with:
+          path: main
+
+      - name: Checkout react/basic
+        uses: actions/checkout@v2
+        with:
+          repository: react/basic
+          #path: my-tools
+          
+      - name: Checkout react/gqlNoRedux
+        uses: actions/checkout@v2
+        with:
+          repository: react/gqlNoRedux
+          #path: my-tools
 
       # Runs a single command using the runners shell
       - name: "initiating update script"
