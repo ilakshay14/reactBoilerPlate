@@ -62,7 +62,7 @@ jobs:
             git commit . -m "updated dependencies"
             if [ $? != 1 ]; then
               echo -e "\033[0;34m info \033[0m pushing to master..."
-              git push origin master
+              git push origin ${{ github.ref }}
               
             else
               echo -e "\033[0;34m info \033[0m repo is already up to date."
